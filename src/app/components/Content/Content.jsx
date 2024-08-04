@@ -25,9 +25,9 @@ const Content = () => {
 
   return (
     <Context.Provider value={[section, setSection]}>
-      <div className="flex flex-grow w-100 bg-gray-900 ml-5 rounded-3xl relative overflow-hidden min-w-fit">
+      <div className="flex bg-gray-900 ml-5 rounded-3xl relative overflow-hidden flex-grow ">
         <Nav />
-        <section className="p-5  w-full font-bold text-3xl ">
+        <section className="p-5 w-full font-bold text-3xl min-w-20">
           {renderSection()}
         </section>
       </div>

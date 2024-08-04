@@ -1,7 +1,12 @@
 import React from "react";
+import Title from "../Title";
 
 const Portfolio = () => {
-  return <div>Portfolio</div>;
+  return (
+    <div>
+      <Title title="Portfolio" />
+    </div>
+  );
 };
 
 export default Portfolio;
