@@ -1,14 +1,14 @@
-import React, { useContext, useState } from "react";
-import { Context } from "../../page";
+import React, { useContext } from "react";
+import { Context } from "../page";
 
-const Nav = () => {
+const BottomNav = () => {
   const [section, setSection] = useContext(Context);
   return (
     <div
-      className={`hidden absolute right-0 lg:flex gap-10 bg-gray-700 rounded-bl-md p-5 pr-10`}
+      className={`justify-center flex gap-10 rounded-t-lg backdrop-filter  backdrop-blur-[1px] p-2 pr-10 bg-gray-700/80`}
     >
       <button
-        className={`text-xl  hover:text-gray-500 ease-in-out duration-300 ${
+        className={`text-md  hover:text-gray-500 ease-in-out duration-300 ${
           section == "about" ? "text-yellow-300" : "text-white"
         }`}
         onClick={() => {
@@ -18,7 +18,7 @@ const Nav = () => {
         About
       </button>
       <button
-        className={`text-xl  hover:text-gray-500 ease-in-out duration-300 ${
+        className={`text-md  hover:text-gray-500 ease-in-out duration-300 ${
           section == "portfolio" ? "text-yellow-300" : "text-white"
         }`}
         onClick={() => {
@@ -28,7 +28,7 @@ const Nav = () => {
         Portfolio
       </button>
       <button
-        className={`text-xl  hover:text-gray-500 ease-in-out duration-300 ${
+        className={`text-md  hover:text-gray-500 ease-in-out duration-300 ${
           section == "contact" ? "text-yellow-300" : "text-white"
         }`}
         onClick={() => {
@@ -41,4 +41,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default BottomNav;

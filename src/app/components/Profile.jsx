@@ -5,7 +5,7 @@ import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 
 const Profile = () => {
   return (
-    <div className="bg-gray-900 p-10 rounded-3xl text-center items flex flex-col items-center min-w-fit h-fit">
+    <div className="bg-gray-900 p-10 rounded-3xl text-center items flex flex-col items-center min-w-fit h-fit lg:sticky lg:top-0">
       <Image
         className="rounded-3xl"
         src={"/myphoto.jpg"}
