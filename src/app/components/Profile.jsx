@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const Profile = () => {
   return (
@@ -20,6 +21,16 @@ const Profile = () => {
         <nav className="flex flex-col gap-2">
           <ul>
             <li className="flex items-center">
+              <MdEmail size={20} />
+
+              <a
+                href="mailto:mdikiisra98@gmail.com"
+                className="ml-2 text-base hover:text-gray-400 ease-in-out duration-300"
+              >
+                mdikiisra98@gmail.com
+              </a>
+            </li>
+            <li className="flex items-center">
               <FaLinkedin size={20} />
 
               <Link
@@ -30,30 +41,29 @@ const Profile = () => {
                 in/mdickyisra
               </Link>
             </li>
+            <li className="flex items-center">
+              <FaGithub size={20} />
+
+              <Link
+                href={"https://github.com/DaDecky"}
+                target="_blank"
+                className="ml-2 text-base hover:text-gray-400 ease-in-out duration-300 "
+              >
+                DaDecky
+              </Link>
+            </li>
+            <li className="flex items-center">
+              <FaInstagram size={20} />
+
+              <Link
+                href={"https://www.instagram.com/dadecky"}
+                target="_blank"
+                className="ml-2 text-base hover:text-gray-400 ease-in-out duration-300 "
+              >
+                dadecky
+              </Link>
+            </li>
           </ul>
-          <li className="flex items-center">
-            <FaGithub size={20} />
-
-            <Link
-              href={"https://github.com/DaDecky"}
-              target="_blank"
-              className="ml-2 text-base hover:text-gray-400 ease-in-out duration-300 "
-            >
-              DaDecky
-            </Link>
-          </li>
-          <li className="flex items-center">
-            <FaInstagram size={20} />
-
-            <Link
-              href={"https://www.instagram.com/dadecky"}
-              target="_blank"
-              className="ml-2 text-base hover:text-gray-400 ease-in-out duration-300 "
-            >
-              dadecky
-            </Link>
-          </li>
-          <li className="flex"></li>
         </nav>
       </section>
     </div>
