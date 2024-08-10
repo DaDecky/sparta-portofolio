@@ -8,7 +8,9 @@ const BottomNav = () => {
       className={`justify-center flex gap-10 rounded-t-lg backdrop-filter  backdrop-blur-[1px] p-2 pr-10 bg-gray-700/80`}
     >
       <button
-        className={`text-md  hover:text-gray-500 ease-in-out duration-300 ${
+        className={`text-md  hover:${
+          section == "about" ? "text-yellow-300" : "text-gray-500"
+        } ease-in-out duration-300 ${
           section == "about" ? "text-yellow-300" : "text-white"
         }`}
         onClick={() => {
@@ -18,7 +20,9 @@ const BottomNav = () => {
         About
       </button>
       <button
-        className={`text-md  hover:text-gray-500 ease-in-out duration-300 ${
+        className={`text-md  hover:${
+          section == "experience" ? "text-yellow-300" : "text-gray-500"
+        } ease-in-out duration-300 ${
           section == "experience" ? "text-yellow-300" : "text-white"
         }`}
         onClick={() => {
