@@ -14,7 +14,7 @@ const Profile = () => {
         alt="personal photo"
       />
       <h1 className="my-4 text-2xl">Muhammad Dicky Isra</h1>
-      <div className="bg-gray-600 rounded-lg px-5 py-2">Web Developer</div>
+      <div className="bg-gray-600 rounded-lg px-5 py-2">Teknik Informatika</div>
       <div className="my-5 border-t-2 border-white w-11/12 rounded-md"></div>
       <section className="self-start">
         <nav className="flex flex-col gap-2">
