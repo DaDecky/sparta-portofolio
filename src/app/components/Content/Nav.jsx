@@ -19,15 +19,15 @@ const Nav = () => {
       </button>
       <button
         className={`text-xl  hover:text-gray-500 ease-in-out duration-300 ${
-          section == "portfolio" ? "text-yellow-300" : "text-white"
+          section == "experience" ? "text-yellow-300" : "text-white"
         }`}
         onClick={() => {
-          setSection("portfolio");
+          setSection("experience");
         }}
       >
-        Portfolio
+        Experience
       </button>
-      <button
+      {/* <button
         className={`text-xl  hover:text-gray-500 ease-in-out duration-300 ${
           section == "contact" ? "text-yellow-300" : "text-white"
         }`}
@@ -36,7 +36,7 @@ const Nav = () => {
         }}
       >
         Contact
-      </button>
+      </button> */}
     </div>
   );
 };

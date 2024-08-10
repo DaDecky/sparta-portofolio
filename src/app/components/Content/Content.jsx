@@ -2,9 +2,9 @@
 import React, { useContext, useState } from "react";
 import Nav from "./Nav";
 import About from "./Section/About";
-import Portfolio from "./Section/Portfolio";
 import Contact from "./Section/Contact";
 import { Context } from "../../page";
+import Experience from "./Section/Experience";
 
 const Content = () => {
   const [section, setSection] = useContext(Context);
@@ -12,8 +12,8 @@ const Content = () => {
     switch (section) {
       case "about":
         return <About />;
-      case "portfolio":
-        return <Portfolio />;
+      case "experience":
+        return <Experience />;
       case "contact":
         return <Contact />;
       default:

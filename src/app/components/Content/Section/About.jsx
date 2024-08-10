@@ -5,15 +5,41 @@ const About = () => {
   return (
     <div className="">
       <Title title="About Me" />
-      <p className="text-base font-normal">
-        I am a sophomore majoring in informatics/computer science at Institut
-        Teknologi Bandung. I have been interested in the study of computer
-        science since high school. During my freshman year, I have been studying
-        and growing myself in the fields of web development, software
-        development, and data science. I have a strong will to learn and am
-        passionate about new technology. I am also open to job and internship
-        opportunities.
-      </p>
+      <section>
+        <p className="text-base font-normal">
+          Perkenalkan aku Muhammad Dicky Isra, atau biasa dipanggil Diky. Saat
+          ini aku sedang menempuh studi sarjana dalam bidang Teknik Informatika
+          di Institut teknologi Bandung.
+        </p>
+      </section>
+
+      <section className="my-10">
+        <h1 className="font-semibold text-3xl my-1">Minat dan Bakat</h1>
+
+        <p className="text-base font-normal">
+          Saat ini aku memiliki minat terhadap beberapa bidang, antara lain Web
+          Development, Mobile Development, dan Data Science. Saat ini juga fokus
+          utamaku adalah Web Development, aku mempelajari Web Development karena
+          aku berminat pada karir Software Engineering.
+        </p>
+        <p className="text-base font-normal mt-2">
+          Aku tidak merasa diriku berbakat sehingga aku harus mengembangkan
+          kemampuanku dengan bekerja keras dengan mendalami minatku.
+        </p>
+      </section>
+      <section className="my-10">
+        <h1 className="font-semibold text-3xl my-1">Pencapaian</h1>
+
+        <p className="text-base font-normal">
+          Sampai saat ini, aku belum memiliki pencapaian, cukup ironis. Namun,
+          aku memiliki komitmen untuk mencapai segala yang ingin aku raih selama
+          kuliah maupun setelahnya.
+        </p>
+        <p className="text-base font-normal mt-2">
+          Akan tetapi, jika project dapat dihitung sebagai pencapaian, maka
+          dapat melihatnya pada bagian Experience.
+        </p>
+      </section>
     </div>
   );
 };
